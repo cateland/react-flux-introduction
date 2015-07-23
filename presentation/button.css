@@ -1,0 +1,24 @@
+.button {
+  padding: 20px;
+  background: black;
+  min-width: 300px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  border: none;
+  color: white;
+  outline: none;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.button:hover {
+  background-image: linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+}
+
+.button:active {
+  box-shadow: 0 0 0 1px rgba(0,0,0,.15) inset,0 0 6px rgba(0,0,0,.2) inset;
+}
+
+.button.button-primary {
+  background-color: rgb(232, 84, 18);
+}
