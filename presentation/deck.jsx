@@ -64,7 +64,7 @@ export default class extends React.Component {
             lang="javascript"
             source={require("raw!./deck.example")}
             margin="20px auto"/>
-            <Text textColor="secondary">(5 minutes)</Text>
+            <Text textColor="secondary">(10 minutes)</Text>
         </Slide>
 
         <Slide transition={["slide", "spin"]} bgColor="tertiary">
@@ -85,11 +85,21 @@ export default class extends React.Component {
             <ListItem><Appear fid="2">ne fera pas de requêtes ajax</Appear></ListItem>
             <ListItem><Appear fid="3">est une librairie pour manager des composants</Appear></ListItem>
             <ListItem textColor="primary"><Appear fid="4">compatible IE8</Appear></ListItem>
+            <ListItem><Appear fid="3">est le V de MVC</Appear></ListItem>
           </List>
         </Slide>
 
-        <Slide transition={["slide", "spin"]} bgColor="secondary">
-          <Heading textColor="primary" caps fit>Anatomie d&apos;un composant React</Heading>
+        <Slide transition={["slide", "spin"]} bgColor="tertiary">
+          <Heading textColor="secondary" fit>Concept de fonctionnement</Heading>
+          <List>
+            <ListItem><Appear fid="1">Component</Appear></ListItem>
+            <ListItem><Appear fid="2">Dom Réconciliation</Appear></ListItem>
+            <ListItem><Appear fid="3">User Events</Appear></ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={["slide", "spin"]} bgColor="primary">
+          <Heading textColor="secondary" caps fit>Anatomie d&apos;un composant React</Heading>
           <Layout>
             <Fill>
             <CodePane
@@ -101,34 +111,16 @@ export default class extends React.Component {
               <Button primary style={{marginTop: '1.5em'}}>Button !</Button>
             </Fill>
           </Layout>
-          <Text textColor="tertiary">(15 minutes)</Text>
+          <Text textColor="secondary">(20 minutes)</Text>
         </Slide>
-        <Slide transition={["slide", "spin"]} bgColor="secondary">
-          <Heading fit textColor="primary">Une api simple et efficace</Heading>
+        <Slide transition={["slide", "spin"]} bgColor="primary">
+          <Heading fit textColor="secondary">Une api simple et efficace</Heading>
           <List textColor="tertiary">
             <ListItem><Appear fid="1">Render method</Appear></ListItem>
             <ListItem><Appear fid="2">Props</Appear></ListItem>
             <ListItem><Appear fid="3">State</Appear></ListItem>
             <ListItem><Appear fid="4">Cycle de vie</Appear></ListItem>
-          </List>
-        </Slide>
-
-
-        <Slide transition={["slide", "spin"]} bgColor="primary">
-          <Heading caps fit size={1} textColor="tertiary">
-            Application ?
-          </Heading>
-          <Heading caps fit size={1} textColor="secondary">
-            Les bonnes pratiques
-          </Heading>
-          <Text textColor="tertiary">(10 minutes)</Text>
-        </Slide>
-        <Slide transition={["slide", "spin"]} bgColor="primary">
-          <List textColor="tertiary">
-            <ListItem><Appear fid="1">Stateless components</Appear></ListItem>
-            <ListItem><Appear fid="2">Higher order component</Appear></ListItem>
-            <ListItem><Appear fid="3">Unidirectional dataflow</Appear></ListItem>
-            <ListItem><Appear fid="4">Tests</Appear></ListItem>
+            <ListItem><Appear fid="5">Composite components</Appear></ListItem>
           </List>
         </Slide>
 
@@ -139,7 +131,7 @@ export default class extends React.Component {
           <Heading caps fit size={1} textColor="secondary">
             Flux
           </Heading>
-          <Text textColor="tertiary">(10 minutes)</Text>
+          <Text textColor="tertiary">(15 minutes)</Text>
         </Slide>
         <Slide transition={["slide", "spin"]} bgColor="vertSanteclair">
           <List textColor="tertiary">
@@ -157,8 +149,8 @@ export default class extends React.Component {
           <Heading caps fit size={1} textColor="tertiary">
             Aller + loin
           </Heading>
-          <Heading caps size={1} textColor="secondary">
-            SVG, Canvas, Robotique...
+          <Heading caps size={2} textColor="secondary">
+            Performance, Routing, Animations, SVG, Canvas, ...
           </Heading>
           <Heading fit caps>Universal Javascript</Heading>
           <Text textColor="tertiary">(5 minutes)</Text>
