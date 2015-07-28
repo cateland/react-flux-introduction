@@ -17,7 +17,9 @@ const images = {
   santeclairBackground: require("./santeclair-background.png"),
   city: require("./city.jpg"),
   kat: require("./kat.png"),
-  logo: require("./formidable-logo.svg")
+  logo: require("./formidable-logo.svg"),
+  IE8: require("./IE8.png"),
+  noMagic: require("./nomagic.png")
 };
 
 preloader([images.city, images.kat]);
@@ -68,7 +70,7 @@ export default class extends React.Component {
         </Slide>
 
         <Slide transition={["slide", "spin"]} bgColor="tertiary">
-          <Heading textColor="secondary" fit>React n&apos;est pas angular !</Heading>
+          <Heading textColor="secondary" fit>React n&apos;est pas :</Heading>
           <Layout>
             <Fill>
               <Image src={images.reactLogo.replace('/', '')} margin="0px auto"  height="200px"/>
@@ -83,16 +85,25 @@ export default class extends React.Component {
           <List>
             <ListItem><Appear fid="1">n&apos;est pas un framework</Appear></ListItem>
             <ListItem><Appear fid="2">ne fera pas de requêtes ajax</Appear></ListItem>
-            <ListItem><Appear fid="3">est une librairie pour manager des composants</Appear></ListItem>
-            <ListItem textColor="primary"><Appear fid="4">compatible IE8</Appear></ListItem>
-            <ListItem><Appear fid="3">est le V de MVC</Appear></ListItem>
+            <ListItem><Appear fid="3">n&apos;architectureras pas votre application à votre place</Appear></ListItem>
+            <ListItem><Appear fid="4">n&apos;est pas magique</Appear></ListItem>
+          </List>
+        </Slide>
+
+        <Slide transition={["slide", "spin"]} bgColor="tertiary">
+          <Heading textColor="secondary" fit>React est par contre :</Heading>
+          <List>
+            <ListItem><Appear fid="1">est une librairie pour manager des composants</Appear></ListItem>
+            <ListItem><Appear fid="2">est le V de MVC</Appear></ListItem>
+            <ListItem><Appear fid="2">super simple à comprendre et a utiliser</Appear></ListItem>
+            <ListItem textColor="primary"><Appear fid="4">compatible IE8<Image src={images.IE8.replace('/', '')} height="150px" margin="0 0 -50px 20px"/></Appear></ListItem>
           </List>
         </Slide>
 
         <Slide transition={["slide", "spin"]} bgColor="tertiary">
           <Heading textColor="secondary" fit>Concept de fonctionnement</Heading>
           <List>
-            <ListItem><Appear fid="1">Component</Appear></ListItem>
+            <ListItem><Appear fid="1">Components</Appear></ListItem>
             <ListItem><Appear fid="2">Dom Réconciliation</Appear></ListItem>
             <ListItem><Appear fid="3">User Events</Appear></ListItem>
           </List>
@@ -111,16 +122,17 @@ export default class extends React.Component {
               <Button primary style={{marginTop: '1.5em'}}>Button !</Button>
             </Fill>
           </Layout>
-          <Text textColor="secondary">(20 minutes)</Text>
+          <Text textColor="secondary">(15 minutes)</Text>
         </Slide>
         <Slide transition={["slide", "spin"]} bgColor="primary">
+          <Heading fit textColor="secondary">Pas de magie !</Heading>
           <Heading fit textColor="secondary">Une api simple et efficace</Heading>
           <List textColor="tertiary">
             <ListItem><Appear fid="1">Render method</Appear></ListItem>
             <ListItem><Appear fid="2">Props</Appear></ListItem>
             <ListItem><Appear fid="3">State</Appear></ListItem>
-            <ListItem><Appear fid="4">Cycle de vie</Appear></ListItem>
             <ListItem><Appear fid="5">Composite components</Appear></ListItem>
+            <ListItem><Appear fid="4">Cycle de vie</Appear></ListItem>
           </List>
         </Slide>
 
